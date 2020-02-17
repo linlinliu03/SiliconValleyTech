@@ -60,6 +60,7 @@ function logoSelection(location = "all", type = "all") {
         .style("width", "230px")
         .style("left", "48px")
         .style("top", "350px");
+
     let companySprite = companyInfo.append("img")
         .attr("class", "company-sprite");
 
