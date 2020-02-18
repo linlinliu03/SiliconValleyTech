@@ -46,9 +46,9 @@ function logoSelection(location = "all", type = "all") {
         .append("g")
         .attr("transform", function () {
             if (location === 'all') {
-                return `translate(${width * 0.60},${height / 2})`;
+                return `translate(${width * 0.70},${height / 2})`;
             } else {
-                return `translate(${width * 0.60}, ${height / 2 - 40})`
+                return `translate(${width * 0.70}, ${height / 2 - 40})`
             }
         });
 
@@ -58,7 +58,7 @@ function logoSelection(location = "all", type = "all") {
         .attr("class", "company-info")
         .style("height", '250px')
         .style("width", "230px")
-        .style("left", "48px")
+        .style("left", "100px")
         .style("top", "350px");
 
     let companySprite = companyInfo.append("img")
@@ -155,7 +155,7 @@ function logoSelection(location = "all", type = "all") {
         companyInfo
             .style("height", '250px')
             .style("width", "230px")
-            .style("left", "48px")
+            .style("left", "100px")
             .style("top", "350px");
 
         companySprite
@@ -189,7 +189,7 @@ function logoSelection(location = "all", type = "all") {
         companyInfo
             .style("height", '250px')
             .style("width", "230px")
-            .style("left", "48px")
+            .style("left", "100px")
             .style("top", "350px");
 
         companySprite
@@ -409,5 +409,3 @@ svgContainer.append('text')
     .attr('y', height + margin * 1.7)
     .attr('text-anchor', 'start')
     .text('Source: Stack Overflow, 2019')
-
-
